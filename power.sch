@@ -737,10 +737,6 @@ F 3 "" H 3800 6000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3100 5700 3050 5700
-Wire Wire Line
-	3050 5350 3400 5350
-Text GLabel 3400 5350 2    50   BiDi ~ 0
-VDD33
 $Comp
 L power:GND #PWR?
 U 1 1 5F517DAF
@@ -913,4 +909,15 @@ Text Notes 4600 5800 0    50   ~ 0
 K7\nSW-PB-2P_1\n
 Text Notes 6150 6150 0    50   ~ 0
 Previouse from JTAG\nConsider replacing with single diode
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F4DE606
+P 3050 5350
+F 0 "#PWR?" H 3050 5200 50  0001 C CNN
+F 1 "+3.3V" H 3065 5523 50  0000 C CNN
+F 2 "" H 3050 5350 50  0001 C CNN
+F 3 "" H 3050 5350 50  0001 C CNN
+	1    3050 5350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

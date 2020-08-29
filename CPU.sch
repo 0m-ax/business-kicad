@@ -1,0 +1,179 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C?
+U 1 1 5F4BF335
+P 2150 1900
+F 0 "C?" H 2265 1946 50  0000 L CNN
+F 1 "20pF" H 2265 1855 50  0000 L CNN
+F 2 "" H 2188 1750 50  0001 C CNN
+F 3 "~" H 2150 1900 50  0001 C CNN
+	1    2150 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F4BF565
+P 1550 1900
+F 0 "C?" H 1665 1946 50  0000 L CNN
+F 1 "20pF" H 1665 1855 50  0000 L CNN
+F 2 "" H 1588 1750 50  0001 C CNN
+F 3 "~" H 1550 1900 50  0001 C CNN
+	1    1550 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2050 1550 2200
+Wire Wire Line
+	1550 2200 1900 2200
+Wire Wire Line
+	2150 2200 2150 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5F4BFBF2
+P 1900 2250
+F 0 "#PWR?" H 1900 2000 50  0001 C CNN
+F 1 "GND" H 1905 2077 50  0000 C CNN
+F 2 "" H 1900 2250 50  0001 C CNN
+F 3 "" H 1900 2250 50  0001 C CNN
+	1    1900 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2250 1900 2200
+Connection ~ 1900 2200
+Wire Wire Line
+	1900 2200 2150 2200
+$Comp
+L Device:Crystal Y?
+U 1 1 5F4C022D
+P 1850 1600
+F 0 "Y?" H 1850 1868 50  0000 C CNN
+F 1 "8MHz" H 1850 1777 50  0000 C CNN
+F 2 "" H 1850 1600 50  0001 C CNN
+F 3 "~" H 1850 1600 50  0001 C CNN
+	1    1850 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1750 1550 1600
+Wire Wire Line
+	1550 1600 1700 1600
+Wire Wire Line
+	2000 1600 2150 1600
+Wire Wire Line
+	2150 1600 2150 1750
+Wire Wire Line
+	1550 1600 1550 950 
+Wire Wire Line
+	1550 950  2800 950 
+Connection ~ 1550 1600
+Wire Wire Line
+	2150 1600 2150 1150
+Wire Wire Line
+	2150 1150 2800 1150
+Connection ~ 2150 1600
+Text Label 2800 950  0    50   ~ 0
+XOUT
+Text Label 2800 1150 0    50   ~ 0
+XIN
+Text Label 7950 4350 0    50   ~ 0
+XOUT
+Text Label 7950 4450 0    50   ~ 0
+XIN
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F4C1155
+P 1550 2900
+F 0 "#PWR?" H 1550 2750 50  0001 C CNN
+F 1 "+3.3V" H 1565 3073 50  0000 C CNN
+F 2 "" H 1550 2900 50  0001 C CNN
+F 3 "" H 1550 2900 50  0001 C CNN
+	1    1550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F4C13A1
+P 1550 3100
+F 0 "R?" H 1620 3146 50  0000 L CNN
+F 1 "10K" H 1620 3055 50  0000 L CNN
+F 2 "" V 1480 3100 50  0001 C CNN
+F 3 "~" H 1550 3100 50  0001 C CNN
+	1    1550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F4C1766
+P 1550 3550
+F 0 "C?" H 1665 3596 50  0000 L CNN
+F 1 "20pF" H 1665 3505 50  0000 L CNN
+F 2 "" H 1588 3400 50  0001 C CNN
+F 3 "~" H 1550 3550 50  0001 C CNN
+	1    1550 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 3400 1550 3300
+Wire Wire Line
+	1550 2950 1550 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5F4C1E51
+P 1550 3750
+F 0 "#PWR?" H 1550 3500 50  0001 C CNN
+F 1 "GND" H 1555 3577 50  0000 C CNN
+F 2 "" H 1550 3750 50  0001 C CNN
+F 3 "" H 1550 3750 50  0001 C CNN
+	1    1550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 3750 1550 3700
+Wire Wire Line
+	1550 3300 1900 3300
+Connection ~ 1550 3300
+Wire Wire Line
+	1550 3300 1550 3250
+Text Label 1900 3300 0    50   ~ 0
+MRST_B
+Text Label 7950 4550 0    50   ~ 0
+MRST_B
+Text Label 2400 5000 0    50   ~ 0
+DPLUS
+$Comp
+L Device:R R?
+U 1 1 5F4C2ADC
+P 2200 5250
+F 0 "R?" H 2270 5296 50  0000 L CNN
+F 1 "1.5K" H 2270 5205 50  0000 L CNN
+F 2 "" V 2130 5250 50  0001 C CNN
+F 3 "~" H 2200 5250 50  0001 C CNN
+	1    2200 5250
+	1    0    0    -1  
+$EndComp
+Text Label 2350 5500 0    50   ~ 0
+USB_CNCT
+Wire Wire Line
+	2350 5500 2200 5500
+Wire Wire Line
+	2200 5500 2200 5400
+Wire Wire Line
+	2200 5100 2200 5000
+Wire Wire Line
+	2200 5000 2400 5000
+$EndSCHEMATC

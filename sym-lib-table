@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name csky)(type Legacy)(uri ${KIPRJMOD}/libs/csky.lib)(options "")(descr ""))
+  (lib (name Csky)(type Legacy)(uri ${KIPRJMOD}/libs/2020-08-26_16-16-22.lib)(options "")(descr ""))
+  (lib (name cSky)(type Legacy)(uri /home/richard/Documents/Kicad-projects/C-Sky/business-kicad/libs/csky.lib)(options "")(descr "")(disabled))
 )

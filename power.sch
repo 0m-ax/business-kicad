@@ -920,4 +920,6 @@ F 3 "" H 3050 5350 50  0001 C CNN
 	1    3050 5350
 	1    0    0    -1  
 $EndComp
+Text GLabel 600  3700 0    50   Input ~ 0
+NRST_GX_CPU
 $EndSCHEMATC

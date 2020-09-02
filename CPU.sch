@@ -794,4 +794,113 @@ F 3 "" H 1550 6550 50  0001 C CNN
 	1    1550 6550
 	1    0    0    -1  
 $EndComp
+NoConn ~ 8800 1150
+NoConn ~ 8800 1250
+NoConn ~ 8800 1350
+NoConn ~ 8800 1450
+NoConn ~ 8800 6050
+Text GLabel 8900 5850 2    50   Output ~ 0
+NRST_GX_CPU
+Wire Wire Line
+	8900 5850 8800 5850
+Text Label 2950 7000 0    50   ~ 0
+SPI_MISO
+Wire Wire Line
+	2950 7000 2750 7000
+Text Label 9050 4750 0    50   ~ 0
+SPI_MISO
+Wire Wire Line
+	8800 4750 9050 4750
+Text Label 9050 4650 0    50   ~ 0
+SPI_CSN
+Wire Wire Line
+	9050 4650 8800 4650
+Text Label 1350 7000 2    50   ~ 0
+SPI_CSN
+Text Label 2950 6900 0    50   ~ 0
+SPI_MOSI
+Wire Wire Line
+	2950 6900 2750 6900
+Text Label 9050 4550 0    50   ~ 0
+SPI_MOSI
+Wire Wire Line
+	8800 4550 9050 4550
+Text Label 9050 4450 0    50   ~ 0
+SPI_CLK
+Text Label 1550 7200 2    50   ~ 0
+SPI_CLK
+Wire Wire Line
+	1550 7200 1750 7200
+Wire Wire Line
+	9050 4450 8800 4450
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F54869D
+P 3500 6950
+F 0 "#PWR?" H 3500 6800 50  0001 C CNN
+F 1 "+3.3V" H 3515 7123 50  0000 C CNN
+F 2 "" H 3500 6950 50  0001 C CNN
+F 3 "" H 3500 6950 50  0001 C CNN
+	1    3500 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 7300 3500 7300
+Wire Wire Line
+	3500 7300 3500 7200
+Wire Wire Line
+	2750 7200 3500 7200
+Connection ~ 3500 7200
+Wire Wire Line
+	3500 7200 3500 6950
+Text Notes 9250 4200 0    50   ~ 0
+Main Serial port. tty0
+Wire Wire Line
+	8800 4150 9050 4150
+Wire Wire Line
+	8800 4250 9050 4250
+Text GLabel 8900 3350 2    50   Input ~ 0
+HDMI_PLG
+Text GLabel 8900 3250 2    50   BiDi ~ 0
+HDMI_SCL
+Text GLabel 8900 3150 2    50   BiDi ~ 0
+HDMI_SDA
+Text GLabel 9500 3050 2    50   Output ~ 0
+TXC_N
+Text GLabel 9500 2950 2    50   Output ~ 0
+TXC_P
+Text GLabel 9500 2850 2    50   Output ~ 0
+TX0_N
+Text GLabel 9500 2750 2    50   Output ~ 0
+TX0_P
+Text GLabel 9500 2550 2    50   Output ~ 0
+TX1_P
+Text GLabel 9500 2650 2    50   Output ~ 0
+TX1_N
+Text GLabel 9500 2350 2    50   Output ~ 0
+TX2_P
+Text GLabel 9500 2450 2    50   Output ~ 0
+TX2_N
+Wire Wire Line
+	9500 2350 8800 2350
+Wire Wire Line
+	8800 2450 9500 2450
+Wire Wire Line
+	9500 2550 8800 2550
+Wire Wire Line
+	8800 2650 9500 2650
+Wire Wire Line
+	9500 2750 8800 2750
+Wire Wire Line
+	8800 2850 9500 2850
+Wire Wire Line
+	9500 2950 8800 2950
+Wire Wire Line
+	8800 3050 9500 3050
+Wire Wire Line
+	8900 3150 8800 3150
+Wire Wire Line
+	8800 3250 8900 3250
+Wire Wire Line
+	8900 3350 8800 3350
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -43,4 +43,10 @@ Wire Notes Line
 	1400 1550 1400 1100
 Text Notes 1650 1350 0    50   ~ 0
 CPU\n
+$Sheet
+S 3800 800  5950 1350
+U 5F529CC2
+F0 "ports-GPIO" 50
+F1 "ports-GPIO.sch" 50
+$EndSheet
 $EndSCHEMATC

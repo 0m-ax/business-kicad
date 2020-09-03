@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -794,10 +794,6 @@ F 3 "" H 1550 6550 50  0001 C CNN
 	1    1550 6550
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8800 1150
-NoConn ~ 8800 1250
-NoConn ~ 8800 1350
-NoConn ~ 8800 1450
 NoConn ~ 8800 6050
 Text GLabel 8900 5850 2    50   Output ~ 0
 NRST_GX_CPU
@@ -903,4 +899,20 @@ Wire Wire Line
 	8800 3250 8900 3250
 Wire Wire Line
 	8900 3350 8800 3350
+Text GLabel 5850 1950 0    50   BiDi ~ 0
+HOST1_DM
+Text GLabel 5850 1850 0    50   BiDi ~ 0
+HOST1_DP
+Text GLabel 5700 1750 0    50   BiDi ~ 0
+HOST0_DM
+Text GLabel 5700 1650 0    50   BiDi ~ 0
+HOST0_DP
+Wire Wire Line
+	5700 1650 6100 1650
+Wire Wire Line
+	5700 1750 6100 1750
+Wire Wire Line
+	5850 1850 6100 1850
+Wire Wire Line
+	6100 1950 5850 1950
 $EndSCHEMATC

@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 3800 4250 2200 1300
+S 850  6250 2200 1300
 U 5F46881F
 F0 "Power" 50
 F1 "power.sch" 50
@@ -49,4 +49,42 @@ U 5F529CC2
 F0 "ports-GPIO" 50
 F1 "ports-GPIO.sch" 50
 $EndSheet
+Text Notes 5600 3350 0    0    ~ 0
+TO DO :\n - add blue bean modlue \n - add footprints for all compontents\n - add symble for MOSFET
+Text Notes 2750 3800 0    197  ~ 0
+TO DO  :\n - add symbol for MOSFET\n - add footprint and symble for blue bean module\n - add asign footprints for all components\n - check avalability of parts for power suply
+Wire Notes Line
+	1150 6550 1150 7300
+Wire Notes Line
+	1150 7300 2700 7300
+Wire Notes Line
+	2700 7300 2700 6550
+Wire Notes Line
+	2700 6550 1150 6550
+Wire Notes Line
+	2200 6700 2200 7050
+Wire Notes Line
+	2200 7050 2250 7050
+Wire Notes Line
+	2250 7050 2250 6700
+Wire Notes Line
+	2250 6700 2200 6700
+Wire Notes Line
+	2300 6700 2300 7050
+Wire Notes Line
+	2300 7050 2350 7050
+Wire Notes Line
+	2350 7050 2350 6700
+Wire Notes Line
+	2350 6700 2300 6700
+Wire Notes Line
+	2400 6700 2400 7050
+Wire Notes Line
+	2400 7050 2450 7050
+Wire Notes Line
+	2450 7050 2450 6700
+Wire Notes Line
+	2450 6700 2400 6700
+Text Notes 1300 6750 0    79   ~ 0
+PSU
 $EndSCHEMATC

@@ -615,239 +615,6 @@ F 3 "" H 3650 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0155
-U 1 1 5F55CCBD
-P 7750 5250
-F 0 "#PWR0155" H 7750 5100 50  0001 C CNN
-F 1 "+5V" H 7765 5423 50  0000 C CNN
-F 2 "" H 7750 5250 50  0001 C CNN
-F 3 "" H 7750 5250 50  0001 C CNN
-	1    7750 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R28
-U 1 1 5F55D1AC
-P 7750 5500
-F 0 "R28" H 7820 5546 50  0000 L CNN
-F 1 "100K" H 7820 5455 50  0000 L CNN
-F 2 "" V 7680 5500 50  0001 C CNN
-F 3 "~" H 7750 5500 50  0001 C CNN
-	1    7750 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7750 5250 7750 5300
-Wire Wire Line
-	7750 5650 7750 5750
-Wire Wire Line
-	7750 5300 8200 5300
-Connection ~ 7750 5300
-Wire Wire Line
-	7750 5300 7750 5350
-$Comp
-L Device:R R29
-U 1 1 5F56748F
-P 7750 5950
-F 0 "R29" H 7820 5996 50  0000 L CNN
-F 1 "10K" H 7820 5905 50  0000 L CNN
-F 2 "" V 7680 5950 50  0001 C CNN
-F 3 "~" H 7750 5950 50  0001 C CNN
-	1    7750 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7750 5800 7750 5750
-Connection ~ 7750 5750
-$Comp
-L power:GND #PWR0156
-U 1 1 5F56A490
-P 7750 6200
-F 0 "#PWR0156" H 7750 5950 50  0001 C CNN
-F 1 "GND" H 7755 6027 50  0000 C CNN
-F 2 "" H 7750 6200 50  0001 C CNN
-F 3 "" H 7750 6200 50  0001 C CNN
-	1    7750 6200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7750 6100 7750 6200
-$Comp
-L Transistor_BJT:MMBT3906 Q2
-U 1 1 5F570428
-P 9050 5500
-F 0 "Q2" H 9241 5454 50  0000 L CNN
-F 1 "MMBT3906" H 9241 5545 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9250 5425 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 9050 5500 50  0001 L CNN
-	1    9050 5500
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR0157
-U 1 1 5F57823A
-P 8950 5200
-F 0 "#PWR0157" H 8950 5050 50  0001 C CNN
-F 1 "+5V" H 8965 5373 50  0000 C CNN
-F 2 "" H 8950 5200 50  0001 C CNN
-F 3 "" H 8950 5200 50  0001 C CNN
-	1    8950 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8950 5750 8950 5700
-Wire Wire Line
-	7750 5750 8350 5750
-Wire Wire Line
-	8950 5300 8950 5250
-Wire Wire Line
-	8950 5250 9100 5250
-Connection ~ 8950 5250
-Wire Wire Line
-	8950 5250 8950 5200
-$Comp
-L Device:R R34
-U 1 1 5F584E60
-P 9250 5250
-F 0 "R34" V 9043 5250 50  0000 C CNN
-F 1 "10K" V 9134 5250 50  0000 C CNN
-F 2 "" V 9180 5250 50  0001 C CNN
-F 3 "~" H 9250 5250 50  0001 C CNN
-	1    9250 5250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R36
-U 1 1 5F5854D7
-P 9550 5500
-F 0 "R36" V 9343 5500 50  0000 C CNN
-F 1 "510r" V 9434 5500 50  0000 C CNN
-F 2 "" V 9480 5500 50  0001 C CNN
-F 3 "~" H 9550 5500 50  0001 C CNN
-	1    9550 5500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9400 5250 9800 5250
-Wire Wire Line
-	9800 5250 9800 5350
-Wire Wire Line
-	9800 5500 9700 5500
-Wire Wire Line
-	9400 5500 9250 5500
-$Comp
-L Transistor_BJT:MMBT3904 Q6
-U 1 1 5F58BF4D
-P 10150 5650
-F 0 "Q6" H 10341 5696 50  0000 L CNN
-F 1 "MMBT3904" H 10341 5605 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 10350 5575 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 10150 5650 50  0001 L CNN
-	1    10150 5650
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0158
-U 1 1 5F5955FC
-P 10050 5950
-F 0 "#PWR0158" H 10050 5700 50  0001 C CNN
-F 1 "GND" H 10055 5777 50  0000 C CNN
-F 2 "" H 10050 5950 50  0001 C CNN
-F 3 "" H 10050 5950 50  0001 C CNN
-	1    10050 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10050 5850 10050 5950
-Wire Wire Line
-	9800 5350 10050 5350
-Wire Wire Line
-	10050 5350 10050 5450
-Connection ~ 9800 5350
-Wire Wire Line
-	9800 5350 9800 5500
-$Comp
-L Device:R R39
-U 1 1 5F59BA10
-P 10450 5400
-F 0 "R39" H 10380 5354 50  0000 R CNN
-F 1 "510r" H 10380 5445 50  0000 R CNN
-F 2 "" V 10380 5400 50  0001 C CNN
-F 3 "~" H 10450 5400 50  0001 C CNN
-	1    10450 5400
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10350 5650 10450 5650
-Wire Wire Line
-	10450 5650 10450 5550
-$Comp
-L Transistor_BJT:MMBT3906 Q5
-U 1 1 5F5A2AA4
-P 9950 4800
-F 0 "Q5" V 10185 4800 50  0000 C CNN
-F 1 "MMBT3906" V 10276 4800 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 10150 4725 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 9950 4800 50  0001 L CNN
-	1    9950 4800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10150 4900 10450 4900
-Wire Wire Line
-	10450 4900 10450 5250
-Wire Wire Line
-	8350 5750 8350 5400
-Connection ~ 8350 5750
-Wire Wire Line
-	8350 5750 8950 5750
-Wire Wire Line
-	8500 5300 8650 5300
-Wire Wire Line
-	8650 5300 8650 4900
-Wire Wire Line
-	8650 4900 9750 4900
-Connection ~ 8650 4900
-$Comp
-L Device:R R32
-U 1 1 5F5B773D
-P 9050 4550
-F 0 "R32" V 8843 4550 50  0000 C CNN
-F 1 "0.5r" V 8934 4550 50  0000 C CNN
-F 2 "" V 8980 4550 50  0001 C CNN
-F 3 "~" H 9050 4550 50  0001 C CNN
-	1    9050 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R37
-U 1 1 5F5B82A7
-P 9650 4550
-F 0 "R37" V 9443 4550 50  0000 C CNN
-F 1 "510r" V 9534 4550 50  0000 C CNN
-F 2 "" V 9580 4550 50  0001 C CNN
-F 3 "~" H 9650 4550 50  0001 C CNN
-	1    9650 4550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8650 4550 8900 4550
-Wire Wire Line
-	8650 4550 8650 4900
-Wire Wire Line
-	9200 4550 9350 4550
-Wire Wire Line
-	9800 4550 9950 4550
-Wire Wire Line
-	9950 4550 9950 4600
-Connection ~ 9350 4550
-Wire Wire Line
-	9350 4550 9500 4550
-Text Notes 9200 4100 0    50   ~ 0
-USB1 Vcc 
-Text Notes 8250 5200 0    50   ~ 0
-add\nSLS2301
-$Comp
 L power:+5V #PWR0159
 U 1 1 5F5DD0E6
 P 7450 2400
@@ -1104,31 +871,31 @@ Text GLabel 3850 3100 2    50   BiDi ~ 0
 port15-SDA
 Text GLabel 3850 3000 2    50   BiDi ~ 0
 port14-SCL
-Text GLabel 5900 2400 0    50   BiDi ~ 0
+Text GLabel 5900 2300 0    50   BiDi ~ 0
 ADCINNI
-Text GLabel 5900 2500 0    50   BiDi ~ 0
+Text GLabel 5900 2400 0    50   BiDi ~ 0
 ADCINPI
-Text GLabel 5900 2600 0    50   BiDi ~ 0
+Text GLabel 5900 2500 0    50   BiDi ~ 0
 ADCINPQ
-Text GLabel 5900 2700 0    50   BiDi ~ 0
+Text GLabel 5900 2600 0    50   BiDi ~ 0
 ADCINNQ
 Text GLabel 6100 1700 0    50   BiDi ~ 0
 HOST1_DM
 Text GLabel 6100 1600 0    50   BiDi ~ 0
 HOST1_DP
-Text GLabel 6100 2100 0    50   BiDi ~ 0
+Text GLabel 1350 3200 0    50   BiDi ~ 0
 HOST0_DM
-Text GLabel 6100 2000 0    50   BiDi ~ 0
+Text GLabel 1350 3100 0    50   BiDi ~ 0
 HOST0_DP
 Text GLabel 6000 3100 0    50   Output ~ 0
 AOL
 Text GLabel 6000 3000 0    50   Output ~ 0
 AOR
-Text GLabel 5900 2300 0    50   BiDi ~ 0
+Text GLabel 5900 2200 0    50   BiDi ~ 0
 PORT20
 Text GLabel 6000 2900 0    50   Output ~ 0
 VOUT1
-Text GLabel 6100 2800 0    50   Input ~ 0
+Text GLabel 6100 2700 0    50   Input ~ 0
 IR
 Text GLabel 3950 1500 2    50   BiDi ~ 0
 PORT1
@@ -1262,27 +1029,21 @@ Wire Wire Line
 	6100 1700 6250 1700
 Wire Wire Line
 	6250 1600 6100 1600
-Wire Wire Line
-	5400 1800 5400 2200
-Wire Wire Line
-	5400 2200 6250 2200
 Connection ~ 5400 1800
 Wire Wire Line
 	6100 2000 6250 2000
 Wire Wire Line
-	6250 2100 6100 2100
+	5900 2200 6250 2200
 Wire Wire Line
-	5900 2300 6250 2300
+	6250 2300 5900 2300
 Wire Wire Line
-	6250 2400 5900 2400
+	5900 2400 6250 2400
 Wire Wire Line
-	5900 2500 6250 2500
+	6250 2500 5900 2500
 Wire Wire Line
-	6250 2600 5900 2600
+	5900 2600 6250 2600
 Wire Wire Line
-	5900 2700 6250 2700
-Wire Wire Line
-	6250 2800 6100 2800
+	6250 2700 6100 2700
 Wire Wire Line
 	6000 2900 6250 2900
 Wire Wire Line
@@ -1301,14 +1062,31 @@ Text GLabel 5950 1500 0    50   UnSpc ~ 0
 USB2-VCC
 Wire Wire Line
 	5950 1500 6250 1500
-Text GLabel 9200 4250 0    50   UnSpc ~ 0
-USB1-VCC
-Wire Wire Line
-	9200 4250 9350 4250
-Wire Wire Line
-	9350 4250 9350 4550
-Text GLabel 5950 1900 0    50   UnSpc ~ 0
-USB1-VCC
 Wire Wire Line
 	5950 1900 6250 1900
+Text Notes 1500 3200 0    50   ~ 0
+Reserved for Blue bean WIFI module
+Wire Wire Line
+	5400 2800 6250 2800
+Wire Wire Line
+	5400 1800 5400 2800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F54C7EF
+P 5600 2050
+F 0 "#PWR?" H 5600 1900 50  0001 C CNN
+F 1 "+3.3V" H 5615 2223 50  0000 C CNN
+F 2 "" H 5600 2050 50  0001 C CNN
+F 3 "" H 5600 2050 50  0001 C CNN
+	1    5600 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2050 5600 2100
+Wire Wire Line
+	5600 2100 6250 2100
+Wire Wire Line
+	1350 3100 1450 3100
+Wire Wire Line
+	1350 3200 1450 3200
 $EndSCHEMATC

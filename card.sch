@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -51,8 +51,8 @@ F1 "ports-GPIO.sch" 50
 $EndSheet
 Text Notes 5600 3350 0    0    ~ 0
 TO DO :\n - add blue bean modlue \n - add footprints for all compontents\n - add symble for MOSFET
-Text Notes 2750 3800 0    197  ~ 0
-TO DO  :\n - add symbol for MOSFET\n - add footprint and symble for blue bean module\n - add asign footprints for all components\n - check avalability of parts for power suply
+Text Notes 2650 4400 0    197  ~ 0
+TO DO  :\n - check footprint for components. \n  - crycstal\n  - power stuff\n  - CPU\n - check avalability of parts for power suply\n - find crystal, and psu parts on digikey\n
 Wire Notes Line
 	1150 6550 1150 7300
 Wire Notes Line
@@ -87,4 +87,10 @@ Wire Notes Line
 	2450 6700 2400 6700
 Text Notes 1300 6750 0    79   ~ 0
 PSU
+$Sheet
+S 4300 4750 850  1000
+U 5F56A00E
+F0 "BlueBean" 50
+F1 "BlueBean.sch" 50
+$EndSheet
 $EndSCHEMATC

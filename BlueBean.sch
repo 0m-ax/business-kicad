@@ -163,4 +163,10 @@ F 3 "" H 2700 3100 50  0001 C CNN
 	1    2700 3100
 	1    0    0    -1  
 $EndComp
+Text GLabel 3400 3100 0    50   BiDi ~ 0
+HOST1_DM
+Text GLabel 3400 3000 0    50   BiDi ~ 0
+HOST1_DP
+Text Notes 2850 2950 0    50   ~ 0
+for blue tooth ?? 
 $EndSCHEMATC

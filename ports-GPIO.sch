@@ -832,9 +832,9 @@ Wire Wire Line
 Connection ~ 9250 1650
 Wire Wire Line
 	9250 1650 9400 1650
-Text GLabel 5950 1300 0    50   Output ~ 0
+Text GLabel 5950 1400 0    50   Output ~ 0
 UART1-Tx
-Text GLabel 5950 1200 0    50   Input ~ 0
+Text GLabel 5950 1300 0    50   Input ~ 0
 UART1-Rx
 Text GLabel 3950 1900 2    50   BiDi ~ 0
 PORT5
@@ -983,9 +983,9 @@ Wire Wire Line
 Wire Wire Line
 	3750 3100 3850 3100
 Wire Wire Line
-	5950 1200 6250 1200
-Wire Wire Line
 	5950 1300 6250 1300
+Wire Wire Line
+	5950 1400 6250 1400
 $Comp
 L power:GND #PWR0157
 U 1 1 5F95F162
@@ -1005,9 +1005,6 @@ Wire Wire Line
 	5400 1400 5400 1800
 Wire Wire Line
 	5400 1800 6250 1800
-Connection ~ 5400 1400
-Wire Wire Line
-	5400 1400 6250 1400
 Wire Wire Line
 	6100 1700 6250 1700
 Wire Wire Line
@@ -1134,4 +1131,9 @@ Wire Wire Line
 	9400 5000 9550 5000
 Wire Wire Line
 	9550 5000 9550 4900
+Wire Wire Line
+	5400 1400 5400 1200
+Wire Wire Line
+	5400 1200 6250 1200
+Connection ~ 5400 1400
 $EndSCHEMATC

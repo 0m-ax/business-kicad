@@ -858,25 +858,8 @@ Wire Wire Line
 Connection ~ 5700 3650
 Wire Wire Line
 	5700 3650 6200 3650
-$Comp
-L Diode:BAT54A D1
-U 1 1 5F4AB793
-P 5550 6100
-F 0 "D1" H 5550 6325 50  0000 C CNN
-F 1 "BAT54A" H 5550 6234 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5625 6225 50  0001 L CNN
-F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 5430 6100 50  0001 C CNN
-	1    5550 6100
-	1    0    0    -1  
-$EndComp
-Text GLabel 5450 6350 0    50   BiDi ~ 0
+Text GLabel 5250 6100 2    50   BiDi ~ 0
 MR
-Wire Wire Line
-	5450 6350 5550 6350
-Wire Wire Line
-	5550 6350 5550 6300
-Wire Wire Line
-	5850 6100 6100 6100
 $Comp
 L Switch:SW_DPST_x2 SW1
 U 1 1 5F4B482F
@@ -907,8 +890,6 @@ Wire Wire Line
 	5000 6100 5250 6100
 Text Notes 4600 5800 0    50   ~ 0
 K7\nSW-PB-2P_1\n
-Text Notes 6150 6150 0    50   ~ 0
-Previouse from JTAG\nConsider replacing with single diode
 $Comp
 L power:+3.3V #PWR0124
 U 1 1 5F4DE606

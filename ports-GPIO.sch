@@ -19,7 +19,7 @@ U 1 1 5F529FC1
 P 5800 5950
 F 0 "J2" H 6230 5996 50  0000 L CNN
 F 1 "HDMI_A" H 6230 5905 50  0000 L CNN
-F 2 "Connector_HDMI:HDMI_A_Contact_Technology_HDMI-19APL2_Horizontal" H 5825 5950 50  0001 C CNN
+F 2 "C-SKY:HDMI-PCB" H 5825 5950 50  0001 C CNN
 F 3 "https://en.wikipedia.org/wiki/HDMI" H 5825 5950 50  0001 C CNN
 	1    5800 5950
 	1    0    0    -1  

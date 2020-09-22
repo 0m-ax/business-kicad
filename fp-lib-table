@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name Veo)(type KiCad)(uri /home/richard/Documents/Kicad-projects/C-Sky/business-kicad/libs)(options "")(descr ""))
   (lib (name BlueBean)(type KiCad)(uri /home/richard/Documents/Kicad-projects/C-Sky/business-kicad/libs/Blue-Bean)(options "")(descr ""))
+  (lib (name C-SKY)(type KiCad)(uri /home/richard/Documents/Kicad-projects/C-Sky/business-kicad/libs)(options "")(descr ""))
 )

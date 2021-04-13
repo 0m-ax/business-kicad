@@ -132,7 +132,7 @@ Wire Wire Line
 	8800 5650 8900 5650
 Wire Wire Line
 	6100 2150 5450 2150
-Text Notes 4800 2100 0    50   ~ 0
+Text Notes 4450 2100 0    50   ~ 0
 the eternal mystery
 Text Notes 5100 2200 0    50   ~ 0
 ???\n
@@ -565,7 +565,7 @@ L power:+3.3V #PWR0134
 U 1 1 5F4EE07F
 P 5650 2300
 F 0 "#PWR0134" H 5650 2150 50  0001 C CNN
-F 1 "+3.3V" H 5665 2473 50  0000 C CNN
+F 1 "+3.3V" H 5500 2300 50  0000 C CNN
 F 2 "" H 5650 2300 50  0001 C CNN
 F 3 "" H 5650 2300 50  0001 C CNN
 	1    5650 2300
@@ -1017,5 +1017,16 @@ F 2 "" H 5000 3850 50  0001 C CNN
 F 3 "" H 5000 3850 50  0001 C CNN
 	1    5000 3850
 	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 604BDA66
+P 5450 2150
+F 0 "TP1" V 5500 1950 50  0000 C CNN
+F 1 "TestPoint" V 5550 2200 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5650 2150 50  0001 C CNN
+F 3 "~" H 5650 2150 50  0001 C CNN
+	1    5450 2150
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

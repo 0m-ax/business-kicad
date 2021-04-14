@@ -18,19 +18,6 @@ HOST0_DM
 Text GLabel 3450 3300 0    50   BiDi ~ 0
 HOST0_DP
 $Comp
-L Veo:BLUE-BEAN U?
-U 1 1 5F56A572
-P 4350 3200
-AR Path="/5F529CC2/5F56A572" Ref="U?"  Part="1" 
-AR Path="/5F56A00E/5F56A572" Ref="U7"  Part="1" 
-F 0 "U7" H 4350 4186 59  0000 C CNN
-F 1 "BLUE-BEAN" H 4350 4081 59  0000 C CNN
-F 2 "Veo:BLUE-BEAN-A" H 4350 3200 118 0001 C CNN
-F 3 "https://www.8devices.com/media/products/bluebean/downloads/BLUE_bean_datasheet_v1.4-18-10-15.pdf" H 4350 2100 118 0001 C CNN
-	1    4350 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0165
 U 1 1 5F56A62C
 P 4350 4200
@@ -113,8 +100,6 @@ Wire Wire Line
 	3650 3300 3450 3300
 Wire Wire Line
 	3450 3400 3650 3400
-NoConn ~ 3650 3100
-NoConn ~ 3650 3000
 NoConn ~ 5050 2900
 NoConn ~ 5050 3000
 NoConn ~ 5050 3100
@@ -127,10 +112,6 @@ Wire Wire Line
 Connection ~ 5100 3300
 NoConn ~ 5050 3200
 Wire Wire Line
-	2700 3600 2700 3100
-Wire Wire Line
-	2700 3600 3650 3600
-Wire Wire Line
 	4250 4100 4250 4150
 Wire Wire Line
 	4250 4150 4150 4150
@@ -141,11 +122,11 @@ Wire Wire Line
 Wire Wire Line
 	3550 4150 3550 3900
 Connection ~ 4150 4150
-Text GLabel 3400 3100 0    50   BiDi ~ 0
+Text GLabel 2800 3100 0    50   BiDi ~ 0
 HOST1_DM
-Text GLabel 3400 3000 0    50   BiDi ~ 0
+Text GLabel 2800 3000 0    50   BiDi ~ 0
 HOST1_DP
-Text Notes 2850 2950 0    50   ~ 0
+Text Notes 2350 2950 0    50   ~ 0
 for blue tooth ?? 
 $Comp
 L power:+3.3V #PWR?
@@ -163,14 +144,61 @@ $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 604870BC
-P 2700 3100
+P 1600 3000
 AR Path="/5F46881F/604870BC" Ref="#PWR?"  Part="1" 
 AR Path="/5F56A00E/604870BC" Ref="#PWR0169"  Part="1" 
-F 0 "#PWR0169" H 2700 2950 50  0001 C CNN
-F 1 "+3.3V" H 2715 3273 50  0000 C CNN
-F 2 "" H 2700 3100 50  0001 C CNN
-F 3 "" H 2700 3100 50  0001 C CNN
-	1    2700 3100
+F 0 "#PWR0169" H 1600 2850 50  0001 C CNN
+F 1 "+3.3V" H 1615 3173 50  0000 C CNN
+F 2 "" H 1600 3000 50  0001 C CNN
+F 3 "" H 1600 3000 50  0001 C CNN
+	1    1600 3000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1600 3000 1600 3600
+Wire Wire Line
+	1600 3600 3650 3600
+$Comp
+L Veo:BLUE-BEAN U?
+U 1 1 5F56A572
+P 4350 3200
+AR Path="/5F529CC2/5F56A572" Ref="U?"  Part="1" 
+AR Path="/5F56A00E/5F56A572" Ref="U7"  Part="1" 
+F 0 "U7" H 4350 4186 59  0000 C CNN
+F 1 "BLUE-BEAN" H 4350 4081 59  0000 C CNN
+F 2 "Veo:BLUE-BEAN-A" H 4350 3200 118 0001 C CNN
+F 3 "https://www.8devices.com/media/products/bluebean/downloads/BLUE_bean_datasheet_v1.4-18-10-15.pdf" H 4350 2100 118 0001 C CNN
+	1    4350 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP1
+U 1 1 607877C6
+P 3200 3000
+F 0 "JP1" H 3200 3264 50  0000 C CNN
+F 1 "Jumper" H 3200 3173 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3200 3000 50  0001 C CNN
+F 3 "~" H 3200 3000 50  0001 C CNN
+	1    3200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP2
+U 1 1 60788BBA
+P 3200 3100
+F 0 "JP2" H 3200 3364 50  0000 C CNN
+F 1 "Jumper" H 3200 3273 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3200 3100 50  0001 C CNN
+F 3 "~" H 3200 3100 50  0001 C CNN
+	1    3200 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3100 2800 3100
+Wire Wire Line
+	2800 3000 2900 3000
+Wire Wire Line
+	3500 3000 3650 3000
+Wire Wire Line
+	3650 3100 3500 3100
 $EndSCHEMATC
